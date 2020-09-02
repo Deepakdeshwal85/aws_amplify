@@ -1,0 +1,65 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-rnamplify-dev-00652-authRole",
+      "UnauthRoleArn": "arn:aws:iam::228203251134:role/amplify-rnamplify-dev-00652-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::228203251134:role/amplify-rnamplify-dev-00652-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-rnamplify-dev-00652-deployment",
+      "UnauthRoleName": "amplify-rnamplify-dev-00652-unauthRole",
+      "StackName": "amplify-rnamplify-dev-00652",
+      "StackId": "arn:aws:cloudformation:ap-south-1:228203251134:stack/amplify-rnamplify-dev-00652/1d01eaf0-ec82-11ea-9a84-0695265dabc8",
+      "AmplifyAppId": "d232j198efdlyk"
+    }
+  },
+  "api": {
+    "myapi": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7,
+              "description": "demo"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "ixntnnzssbeixfyntxt6gped7y",
+        "GraphQLAPIEndpointOutput": "https://76cvv56upbaarfynamdihjutwm.appsync-api.ap-south-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-3vstrbzr4jafllhrgbyp2zjel4"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-rnamplify-dev-00652-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apimyapi"
+      },
+      "lastPushTimeStamp": "2020-09-02T09:57:48.223Z",
+      "lastPushDirHash": "GYgM7s69LjAwhKimX0dpP2Bo5WQ="
+    }
+  },
+  "auth": {
+    "rnamplify83286f67": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-rnamplify-dev-00652-deployment/amplify-cfn-templates/auth/rnamplify83286f67-cloudformation-template.yml",
+        "logicalId": "authrnamplify83286f67"
+      },
+      "lastPushTimeStamp": "2020-09-02T09:57:48.230Z",
+      "output": {
+        "AppClientSecret": "1dojf2dgmp22baf55l18el2rh1trs38qleom5k7a9dj68iunso5d",
+        "UserPoolId": "ap-south-1_9i6PblelT",
+        "AppClientIDWeb": "6skoqovvgkks36umrp5cof1k8d",
+        "AppClientID": "56n83mf39fa05p2785ugq6c4n8",
+        "IdentityPoolId": "ap-south-1:009b1e3a-b596-47a0-b1de-72ed250413e2",
+        "IdentityPoolName": "rnamplify83286f67_identitypool_83286f67__dev",
+        "UserPoolName": "rnamplify83286f67_userpool_83286f67"
+      },
+      "lastPushDirHash": "9ANCgRCpYUG87Zqw8hxoZpdiAvs="
+    }
+  }
+}
